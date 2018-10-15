@@ -5,23 +5,24 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.50.0
-Release  : 4
-URL      : https://download.kde.org/stable/frameworks/5.50/kcoreaddons-5.50.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.50/kcoreaddons-5.50.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.50/kcoreaddons-5.50.0.tar.xz.sig
+Version  : 5.51.0
+Release  : 5
+URL      : https://download.kde.org/stable/frameworks/5.51/kcoreaddons-5.51.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.51/kcoreaddons-5.51.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.51/kcoreaddons-5.51.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause LGPL-2.0 LGPL-2.1
-Requires: kcoreaddons-bin
-Requires: kcoreaddons-lib
-Requires: kcoreaddons-license
-Requires: kcoreaddons-data
+Requires: kcoreaddons-bin = %{version}-%{release}
+Requires: kcoreaddons-data = %{version}-%{release}
+Requires: kcoreaddons-lib = %{version}-%{release}
+Requires: kcoreaddons-license = %{version}-%{release}
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
+BuildRequires : extra-cmake-modules
+BuildRequires : extra-cmake-modules shared-mime-info
 BuildRequires : glibc-dev
-BuildRequires : qtbase-dev qtbase-extras mesa-dev
-BuildRequires : shared-mime-info
+BuildRequires : qtbase-dev mesa-dev
 
 %description
 # KCoreAddons
@@ -31,8 +32,8 @@ Qt addon library with a collection of non-GUI utilities
 %package bin
 Summary: bin components for the kcoreaddons package.
 Group: Binaries
-Requires: kcoreaddons-data
-Requires: kcoreaddons-license
+Requires: kcoreaddons-data = %{version}-%{release}
+Requires: kcoreaddons-license = %{version}-%{release}
 
 %description bin
 bin components for the kcoreaddons package.
@@ -49,10 +50,10 @@ data components for the kcoreaddons package.
 %package dev
 Summary: dev components for the kcoreaddons package.
 Group: Development
-Requires: kcoreaddons-lib
-Requires: kcoreaddons-bin
-Requires: kcoreaddons-data
-Provides: kcoreaddons-devel
+Requires: kcoreaddons-lib = %{version}-%{release}
+Requires: kcoreaddons-bin = %{version}-%{release}
+Requires: kcoreaddons-data = %{version}-%{release}
+Provides: kcoreaddons-devel = %{version}-%{release}
 
 %description dev
 dev components for the kcoreaddons package.
@@ -61,8 +62,8 @@ dev components for the kcoreaddons package.
 %package lib
 Summary: lib components for the kcoreaddons package.
 Group: Libraries
-Requires: kcoreaddons-data
-Requires: kcoreaddons-license
+Requires: kcoreaddons-data = %{version}-%{release}
+Requires: kcoreaddons-license = %{version}-%{release}
 
 %description lib
 lib components for the kcoreaddons package.
@@ -77,27 +78,27 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.50.0
+%setup -q -n kcoreaddons-5.51.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536431329
-mkdir clr-build
+export SOURCE_DATE_EPOCH=1539614268
+mkdir -p clr-build
 pushd clr-build
 %cmake ..
-make  %{?_smp_mflags}
+make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1536431329
+export SOURCE_DATE_EPOCH=1539614268
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/kcoreaddons
-cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/doc/kcoreaddons/COPYING-CMAKE-SCRIPTS
-cp COPYING.LGPL-2 %{buildroot}/usr/share/doc/kcoreaddons/COPYING.LGPL-2
-cp COPYING.LIB %{buildroot}/usr/share/doc/kcoreaddons/COPYING.LIB
+mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
+cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
+cp COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING.LGPL-2
+cp COPYING.LIB %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING.LIB
 pushd clr-build
 %make_install
 popd
@@ -297,10 +298,10 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.50.0
+/usr/lib64/libKF5CoreAddons.so.5.51.0
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/kcoreaddons/COPYING-CMAKE-SCRIPTS
-/usr/share/doc/kcoreaddons/COPYING.LGPL-2
-/usr/share/doc/kcoreaddons/COPYING.LIB
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
+/usr/share/package-licenses/kcoreaddons/COPYING.LGPL-2
+/usr/share/package-licenses/kcoreaddons/COPYING.LIB
