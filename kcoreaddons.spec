@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.51.0
-Release  : 6
-URL      : https://download.kde.org/stable/frameworks/5.51/kcoreaddons-5.51.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.51/kcoreaddons-5.51.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.51/kcoreaddons-5.51.0.tar.xz.sig
+Version  : 5.52.0
+Release  : 7
+URL      : https://download.kde.org/stable/frameworks/5.52/kcoreaddons-5.52.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.52/kcoreaddons-5.52.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.52/kcoreaddons-5.52.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause LGPL-2.0 LGPL-2.1
@@ -28,6 +28,14 @@ BuildRequires : qtbase-dev mesa-dev
 # KCoreAddons
 Qt addon library with a collection of non-GUI utilities
 ## Introduction
+
+%package abi
+Summary: abi components for the kcoreaddons package.
+Group: Default
+
+%description abi
+abi components for the kcoreaddons package.
+
 
 %package bin
 Summary: bin components for the kcoreaddons package.
@@ -78,14 +86,14 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.51.0
+%setup -q -n kcoreaddons-5.52.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1539635474
+export SOURCE_DATE_EPOCH=1541866684
 mkdir -p clr-build
 pushd clr-build
 %cmake ..
@@ -93,7 +101,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1539635474
+export SOURCE_DATE_EPOCH=1541866684
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
 cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
@@ -105,6 +113,10 @@ popd
 
 %files
 %defattr(-,root,root,-)
+
+%files abi
+%defattr(-,root,root,-)
+/usr/share/abi/libKF5CoreAddons.so.5.52.0.abi
 
 %files bin
 %defattr(-,root,root,-)
@@ -123,7 +135,6 @@ popd
 /usr/share/locale/af/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/ar/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/as/LC_MESSAGES/kcoreaddons5_qt.qm
-/usr/share/locale/ast/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/be/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/be@latin/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/bg/LC_MESSAGES/kcoreaddons5_qt.qm
@@ -222,6 +233,7 @@ popd
 /usr/share/locale/zh_HK/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/zh_TW/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/mime/packages/kde5.xml
+/usr/share/xdg/kcoreaddons.categories
 
 %files dev
 %defattr(-,root,root,-)
@@ -298,7 +310,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.51.0
+/usr/lib64/libKF5CoreAddons.so.5.52.0
 
 %files license
 %defattr(0644,root,root,0755)
