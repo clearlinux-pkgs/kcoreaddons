@@ -6,7 +6,7 @@
 #
 Name     : kcoreaddons
 Version  : 5.52.0
-Release  : 7
+Release  : 8
 URL      : https://download.kde.org/stable/frameworks/5.52/kcoreaddons-5.52.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.52/kcoreaddons-5.52.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.52/kcoreaddons-5.52.0.tar.xz.sig
@@ -28,14 +28,6 @@ BuildRequires : qtbase-dev mesa-dev
 # KCoreAddons
 Qt addon library with a collection of non-GUI utilities
 ## Introduction
-
-%package abi
-Summary: abi components for the kcoreaddons package.
-Group: Default
-
-%description abi
-abi components for the kcoreaddons package.
-
 
 %package bin
 Summary: bin components for the kcoreaddons package.
@@ -93,7 +85,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541866684
+export SOURCE_DATE_EPOCH=1542739526
 mkdir -p clr-build
 pushd clr-build
 %cmake ..
@@ -101,7 +93,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1541866684
+export SOURCE_DATE_EPOCH=1542739526
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
 cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
@@ -113,10 +105,6 @@ popd
 
 %files
 %defattr(-,root,root,-)
-
-%files abi
-%defattr(-,root,root,-)
-/usr/share/abi/libKF5CoreAddons.so.5.52.0.abi
 
 %files bin
 %defattr(-,root,root,-)
