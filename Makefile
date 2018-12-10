@@ -1,5 +1,5 @@
 PKG_NAME := kcoreaddons
-URL = https://download.kde.org/stable/frameworks/5.52/kcoreaddons-5.52.0.tar.xz
+URL = https://download.kde.org/stable/frameworks/5.53/kcoreaddons-5.53.1.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
