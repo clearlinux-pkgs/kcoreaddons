@@ -6,7 +6,7 @@
 #
 Name     : kcoreaddons
 Version  : 5.53.1
-Release  : 10
+Release  : 11
 URL      : https://download.kde.org/stable/frameworks/5.53/kcoreaddons-5.53.1.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.53/kcoreaddons-5.53.1.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.53/kcoreaddons-5.53.1.tar.xz.sig
@@ -85,7 +85,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1544477276
+export SOURCE_DATE_EPOCH=1544486170
 mkdir -p clr-build
 pushd clr-build
 %cmake ..
@@ -93,7 +93,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1544477276
+export SOURCE_DATE_EPOCH=1544486170
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
 cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
