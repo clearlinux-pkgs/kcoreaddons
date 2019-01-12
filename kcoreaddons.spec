@@ -6,7 +6,7 @@
 #
 Name     : kcoreaddons
 Version  : 5.53.1
-Release  : 11
+Release  : 12
 URL      : https://download.kde.org/stable/frameworks/5.53/kcoreaddons-5.53.1.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.53/kcoreaddons-5.53.1.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.53/kcoreaddons-5.53.1.tar.xz.sig
