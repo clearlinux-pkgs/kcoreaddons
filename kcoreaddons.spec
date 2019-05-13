@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.57.0
-Release  : 18
-URL      : https://download.kde.org/stable/frameworks/5.57/kcoreaddons-5.57.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.57/kcoreaddons-5.57.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.57/kcoreaddons-5.57.0.tar.xz.sig
+Version  : 5.58.0
+Release  : 19
+URL      : https://download.kde.org/stable/frameworks/5.58/kcoreaddons-5.58.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.58/kcoreaddons-5.58.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.58/kcoreaddons-5.58.0.tar.xz.sig
 Summary  : Addons to QtCore
 Group    : Development/Tools
 License  : BSD-3-Clause LGPL-2.0 LGPL-2.1
@@ -55,6 +55,7 @@ Requires: kcoreaddons-bin = %{version}-%{release}
 Requires: kcoreaddons-data = %{version}-%{release}
 Provides: kcoreaddons-devel = %{version}-%{release}
 Requires: kcoreaddons = %{version}-%{release}
+Requires: kcoreaddons = %{version}-%{release}
 
 %description dev
 dev components for the kcoreaddons package.
@@ -79,14 +80,14 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.57.0
+%setup -q -n kcoreaddons-5.58.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1557005598
+export SOURCE_DATE_EPOCH=1557766398
 mkdir -p clr-build
 pushd clr-build
 export AR=gcc-ar
@@ -101,7 +102,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1557005598
+export SOURCE_DATE_EPOCH=1557766398
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
 cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
@@ -247,6 +248,7 @@ popd
 /usr/include/KF5/KCoreAddons/KJobUiDelegate
 /usr/include/KF5/KCoreAddons/KMacroExpander
 /usr/include/KF5/KCoreAddons/KMessage
+/usr/include/KF5/KCoreAddons/KOSRelease
 /usr/include/KF5/KCoreAddons/KPluginFactory
 /usr/include/KF5/KCoreAddons/KPluginLoader
 /usr/include/KF5/KCoreAddons/KPluginMetaData
@@ -279,6 +281,7 @@ popd
 /usr/include/KF5/KCoreAddons/kjobuidelegate.h
 /usr/include/KF5/KCoreAddons/kmacroexpander.h
 /usr/include/KF5/KCoreAddons/kmessage.h
+/usr/include/KF5/KCoreAddons/kosrelease.h
 /usr/include/KF5/KCoreAddons/kpluginfactory.h
 /usr/include/KF5/KCoreAddons/kpluginloader.h
 /usr/include/KF5/KCoreAddons/kpluginmetadata.h
@@ -306,7 +309,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.57.0
+/usr/lib64/libKF5CoreAddons.so.5.58.0
 
 %files license
 %defattr(0644,root,root,0755)
