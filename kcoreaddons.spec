@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.58.0
-Release  : 19
-URL      : https://download.kde.org/stable/frameworks/5.58/kcoreaddons-5.58.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.58/kcoreaddons-5.58.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.58/kcoreaddons-5.58.0.tar.xz.sig
+Version  : 5.59.0
+Release  : 20
+URL      : https://download.kde.org/stable/frameworks/5.59/kcoreaddons-5.59.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.59/kcoreaddons-5.59.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.59/kcoreaddons-5.59.0.tar.xz.sig
 Summary  : Addons to QtCore
 Group    : Development/Tools
 License  : BSD-3-Clause LGPL-2.0 LGPL-2.1
@@ -80,14 +80,14 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.58.0
+%setup -q -n kcoreaddons-5.59.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1557766398
+export SOURCE_DATE_EPOCH=1560014470
 mkdir -p clr-build
 pushd clr-build
 export AR=gcc-ar
@@ -102,7 +102,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1557766398
+export SOURCE_DATE_EPOCH=1560014470
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
 cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
@@ -253,6 +253,7 @@ popd
 /usr/include/KF5/KCoreAddons/KPluginLoader
 /usr/include/KF5/KCoreAddons/KPluginMetaData
 /usr/include/KF5/KCoreAddons/KProcess
+/usr/include/KF5/KCoreAddons/KProcessList
 /usr/include/KF5/KCoreAddons/KRandom
 /usr/include/KF5/KCoreAddons/KRandomSequence
 /usr/include/KF5/KCoreAddons/KSharedDataCache
@@ -286,6 +287,7 @@ popd
 /usr/include/KF5/KCoreAddons/kpluginloader.h
 /usr/include/KF5/KCoreAddons/kpluginmetadata.h
 /usr/include/KF5/KCoreAddons/kprocess.h
+/usr/include/KF5/KCoreAddons/kprocesslist.h
 /usr/include/KF5/KCoreAddons/krandom.h
 /usr/include/KF5/KCoreAddons/krandomsequence.h
 /usr/include/KF5/KCoreAddons/kshareddatacache.h
@@ -309,7 +311,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.58.0
+/usr/lib64/libKF5CoreAddons.so.5.59.0
 
 %files license
 %defattr(0644,root,root,0755)
