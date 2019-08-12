@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.60.0
-Release  : 21
-URL      : https://download.kde.org/stable/frameworks/5.60/kcoreaddons-5.60.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.60/kcoreaddons-5.60.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.60/kcoreaddons-5.60.0.tar.xz.sig
+Version  : 5.61.0
+Release  : 22
+URL      : https://download.kde.org/stable/frameworks/5.61/kcoreaddons-5.61.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.61/kcoreaddons-5.61.0.tar.xz
+Source1 : https://download.kde.org/stable/frameworks/5.61/kcoreaddons-5.61.0.tar.xz.sig
 Summary  : Addons to QtCore
 Group    : Development/Tools
 License  : BSD-3-Clause LGPL-2.0 LGPL-2.1
@@ -80,16 +80,17 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.60.0
+%setup -q -n kcoreaddons-5.61.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1563037452
+export SOURCE_DATE_EPOCH=1565580372
 mkdir -p clr-build
 pushd clr-build
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -103,7 +104,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1563037452
+export SOURCE_DATE_EPOCH=1565580372
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
 cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
@@ -243,6 +244,7 @@ popd
 /usr/include/KF5/KCoreAddons/KDirWatch
 /usr/include/KF5/KCoreAddons/KExportPlugin
 /usr/include/KF5/KCoreAddons/KFileSystemType
+/usr/include/KF5/KCoreAddons/KFileUtils
 /usr/include/KF5/KCoreAddons/KFormat
 /usr/include/KF5/KCoreAddons/KJob
 /usr/include/KF5/KCoreAddons/KJobTrackerInterface
@@ -277,6 +279,7 @@ popd
 /usr/include/KF5/KCoreAddons/kdirwatch.h
 /usr/include/KF5/KCoreAddons/kexportplugin.h
 /usr/include/KF5/KCoreAddons/kfilesystemtype.h
+/usr/include/KF5/KCoreAddons/kfileutils.h
 /usr/include/KF5/KCoreAddons/kformat.h
 /usr/include/KF5/KCoreAddons/kjob.h
 /usr/include/KF5/KCoreAddons/kjobtrackerinterface.h
@@ -312,7 +315,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.60.0
+/usr/lib64/libKF5CoreAddons.so.5.61.0
 
 %files license
 %defattr(0644,root,root,0755)
