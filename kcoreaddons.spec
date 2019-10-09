@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.62.0
-Release  : 23
-URL      : https://download.kde.org/stable/frameworks/5.62/kcoreaddons-5.62.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.62/kcoreaddons-5.62.0.tar.xz
-Source1 : https://download.kde.org/stable/frameworks/5.62/kcoreaddons-5.62.0.tar.xz.sig
+Version  : 5.63.0
+Release  : 24
+URL      : https://download.kde.org/stable/frameworks/5.62/kcoreaddons-5.63.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.62/kcoreaddons-5.63.0.tar.xz
+Source1 : https://download.kde.org/stable/frameworks/5.62/kcoreaddons-5.63.0.tar.xz.sig
 Summary  : Addons to QtCore
 Group    : Development/Tools
 License  : BSD-3-Clause LGPL-2.0 LGPL-2.1
@@ -80,14 +80,14 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.62.0
+%setup -q -n kcoreaddons-5.63.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1568864661
+export SOURCE_DATE_EPOCH=1570640181
 mkdir -p clr-build
 pushd clr-build
 # -Werror is for werrorists
@@ -104,7 +104,7 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1568864661
+export SOURCE_DATE_EPOCH=1570640181
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
 cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
@@ -249,6 +249,7 @@ popd
 /usr/include/KF5/KCoreAddons/KJob
 /usr/include/KF5/KCoreAddons/KJobTrackerInterface
 /usr/include/KF5/KCoreAddons/KJobUiDelegate
+/usr/include/KF5/KCoreAddons/KListOpenFilesJob
 /usr/include/KF5/KCoreAddons/KMacroExpander
 /usr/include/KF5/KCoreAddons/KMessage
 /usr/include/KF5/KCoreAddons/KOSRelease
@@ -284,6 +285,7 @@ popd
 /usr/include/KF5/KCoreAddons/kjob.h
 /usr/include/KF5/KCoreAddons/kjobtrackerinterface.h
 /usr/include/KF5/KCoreAddons/kjobuidelegate.h
+/usr/include/KF5/KCoreAddons/klistopenfilesjob.h
 /usr/include/KF5/KCoreAddons/kmacroexpander.h
 /usr/include/KF5/KCoreAddons/kmessage.h
 /usr/include/KF5/KCoreAddons/kosrelease.h
@@ -315,7 +317,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.62.0
+/usr/lib64/libKF5CoreAddons.so.5.63.0
 
 %files license
 %defattr(0644,root,root,0755)
