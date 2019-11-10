@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.63.0
-Release  : 24
-URL      : https://download.kde.org/stable/frameworks/5.62/kcoreaddons-5.63.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.62/kcoreaddons-5.63.0.tar.xz
-Source1 : https://download.kde.org/stable/frameworks/5.62/kcoreaddons-5.63.0.tar.xz.sig
+Version  : 5.64.0
+Release  : 25
+URL      : https://download.kde.org/stable/frameworks/5.64/kcoreaddons-5.64.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.64/kcoreaddons-5.64.0.tar.xz
+Source1 : https://download.kde.org/stable/frameworks/5.64/kcoreaddons-5.64.0.tar.xz.sig
 Summary  : Addons to QtCore
 Group    : Development/Tools
 License  : BSD-3-Clause LGPL-2.0 LGPL-2.1
@@ -80,14 +80,14 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.63.0
+%setup -q -n kcoreaddons-5.64.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1570640181
+export SOURCE_DATE_EPOCH=1573358787
 mkdir -p clr-build
 pushd clr-build
 # -Werror is for werrorists
@@ -104,12 +104,12 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1570640181
+export SOURCE_DATE_EPOCH=1573358787
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
-cp COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
-cp COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING.LGPL-2
-cp COPYING.LIB %{buildroot}/usr/share/package-licenses/kcoreaddons/COPYING.LIB
+cp %{_builddir}/kcoreaddons-5.64.0/COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/77976f406ba34009d9ba5a43b882fe6de68e5175
+cp %{_builddir}/kcoreaddons-5.64.0/COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kcoreaddons/e1032d8ebe34bec76a9c2e7ef2d44f8dae227fa5
+cp %{_builddir}/kcoreaddons-5.64.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kcoreaddons/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 pushd clr-build
 %make_install
 popd
@@ -317,10 +317,10 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.63.0
+/usr/lib64/libKF5CoreAddons.so.5.64.0
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/kcoreaddons/COPYING-CMAKE-SCRIPTS
-/usr/share/package-licenses/kcoreaddons/COPYING.LGPL-2
-/usr/share/package-licenses/kcoreaddons/COPYING.LIB
+/usr/share/package-licenses/kcoreaddons/77976f406ba34009d9ba5a43b882fe6de68e5175
+/usr/share/package-licenses/kcoreaddons/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+/usr/share/package-licenses/kcoreaddons/e1032d8ebe34bec76a9c2e7ef2d44f8dae227fa5
