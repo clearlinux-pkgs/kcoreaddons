@@ -5,14 +5,14 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.68.0
-Release  : 29
-URL      : https://download.kde.org/stable/frameworks/5.68/kcoreaddons-5.68.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.68/kcoreaddons-5.68.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.68/kcoreaddons-5.68.0.tar.xz.sig
+Version  : 5.69.0
+Release  : 30
+URL      : https://download.kde.org/stable/frameworks/5.69/kcoreaddons-5.69.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.69/kcoreaddons-5.69.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.69/kcoreaddons-5.69.0.tar.xz.sig
 Summary  : Addons to QtCore
 Group    : Development/Tools
-License  : BSD-3-Clause LGPL-2.0 LGPL-2.1
+License  : BSD-3-Clause GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
 Requires: kcoreaddons-bin = %{version}-%{release}
 Requires: kcoreaddons-data = %{version}-%{release}
 Requires: kcoreaddons-lib = %{version}-%{release}
@@ -80,15 +80,15 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.68.0
-cd %{_builddir}/kcoreaddons-5.68.0
+%setup -q -n kcoreaddons-5.69.0
+cd %{_builddir}/kcoreaddons-5.69.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1584296984
+export SOURCE_DATE_EPOCH=1586812078
 mkdir -p clr-build
 pushd clr-build
 # -Werror is for werrorists
@@ -105,12 +105,14 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1584296984
+export SOURCE_DATE_EPOCH=1586812078
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
-cp %{_builddir}/kcoreaddons-5.68.0/COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/77976f406ba34009d9ba5a43b882fe6de68e5175
-cp %{_builddir}/kcoreaddons-5.68.0/COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kcoreaddons/e1032d8ebe34bec76a9c2e7ef2d44f8dae227fa5
-cp %{_builddir}/kcoreaddons-5.68.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kcoreaddons/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/kcoreaddons-5.69.0/COPYING-CMAKE-SCRIPTS %{buildroot}/usr/share/package-licenses/kcoreaddons/77976f406ba34009d9ba5a43b882fe6de68e5175
+cp %{_builddir}/kcoreaddons-5.69.0/COPYING.LGPL-2 %{buildroot}/usr/share/package-licenses/kcoreaddons/e1032d8ebe34bec76a9c2e7ef2d44f8dae227fa5
+cp %{_builddir}/kcoreaddons-5.69.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kcoreaddons/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/kcoreaddons-5.69.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/kcoreaddons-5.69.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/e458941548e0864907e654fa2e192844ae90fc32
 pushd clr-build
 %make_install
 popd
@@ -319,10 +321,12 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.68.0
+/usr/lib64/libKF5CoreAddons.so.5.69.0
 
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/kcoreaddons/77976f406ba34009d9ba5a43b882fe6de68e5175
+/usr/share/package-licenses/kcoreaddons/7d9831e05094ce723947d729c2a46a09d6e90275
 /usr/share/package-licenses/kcoreaddons/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 /usr/share/package-licenses/kcoreaddons/e1032d8ebe34bec76a9c2e7ef2d44f8dae227fa5
+/usr/share/package-licenses/kcoreaddons/e458941548e0864907e654fa2e192844ae90fc32
