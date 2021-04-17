@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.78.0
-Release  : 41
-URL      : https://download.kde.org/stable/frameworks/5.78/kcoreaddons-5.78.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.78/kcoreaddons-5.78.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.78/kcoreaddons-5.78.0.tar.xz.sig
+Version  : 5.81.0
+Release  : 42
+URL      : https://download.kde.org/stable/frameworks/5.81/kcoreaddons-5.81.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.81/kcoreaddons-5.81.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.81/kcoreaddons-5.81.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause BSD-3-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0 MPL-1.1
@@ -81,15 +81,15 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.78.0
-cd %{_builddir}/kcoreaddons-5.78.0
+%setup -q -n kcoreaddons-5.81.0
+cd %{_builddir}/kcoreaddons-5.81.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1611174200
+export SOURCE_DATE_EPOCH=1618618843
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -105,25 +105,25 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1611174200
+export SOURCE_DATE_EPOCH=1618618843
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/680ed9349d3d12bd39ddd36e8c4bc6b1b0cb1c0e
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/8287b608d3fa40ef401339fd907ca1260c964123
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/2a638514c87c4923c0570c55822620fad56f2a33
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/GPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/e712eadfab0d2357c0f50f599ef35ee0d87534cb
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/6091db0aead0d90182b93d3c0d09ba93d188f907
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/LGPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/20079e8f79713dce80ab09774505773c926afa2a
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/20079e8f79713dce80ab09774505773c926afa2a
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/3c3d7573e137d48253731c975ecf90d74cfa9efe
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/6f1f675aa5f6a2bbaa573b8343044b166be28399
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/757b86330df80f81143d5916b3e92b4bcb1b1890
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/kcoreaddons-5.78.0/LICENSES/MPL-1.1.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/b40d491259fdd8faefb41c11fda11d9be6c0bdb1
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/680ed9349d3d12bd39ddd36e8c4bc6b1b0cb1c0e
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/8287b608d3fa40ef401339fd907ca1260c964123
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/2a638514c87c4923c0570c55822620fad56f2a33
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/GPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/e712eadfab0d2357c0f50f599ef35ee0d87534cb
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/6091db0aead0d90182b93d3c0d09ba93d188f907
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/LGPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/3c3d7573e137d48253731c975ecf90d74cfa9efe
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/6f1f675aa5f6a2bbaa573b8343044b166be28399
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/757b86330df80f81143d5916b3e92b4bcb1b1890
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/kcoreaddons-5.81.0/LICENSES/MPL-1.1.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/b40d491259fdd8faefb41c11fda11d9be6c0bdb1
 pushd clr-build
 %make_install
 popd
@@ -203,6 +203,7 @@ popd
 /usr/share/locale/ha/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/he/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/hi/LC_MESSAGES/kcoreaddons5_qt.qm
+/usr/share/locale/hi/LC_MESSAGES/kde5_xml_mimetypes.qm
 /usr/share/locale/hne/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/hr/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/hr/LC_MESSAGES/kde5_xml_mimetypes.qm
@@ -326,6 +327,7 @@ popd
 /usr/include/KF5/KCoreAddons/KFileSystemType
 /usr/include/KF5/KCoreAddons/KFileUtils
 /usr/include/KF5/KCoreAddons/KFormat
+/usr/include/KF5/KCoreAddons/KFuzzyMatcher
 /usr/include/KF5/KCoreAddons/KJob
 /usr/include/KF5/KCoreAddons/KJobTrackerInterface
 /usr/include/KF5/KCoreAddons/KJobUiDelegate
@@ -362,6 +364,7 @@ popd
 /usr/include/KF5/KCoreAddons/kfilesystemtype.h
 /usr/include/KF5/KCoreAddons/kfileutils.h
 /usr/include/KF5/KCoreAddons/kformat.h
+/usr/include/KF5/KCoreAddons/kfuzzymatcher.h
 /usr/include/KF5/KCoreAddons/kjob.h
 /usr/include/KF5/KCoreAddons/kjobtrackerinterface.h
 /usr/include/KF5/KCoreAddons/kjobuidelegate.h
@@ -397,7 +400,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.78.0
+/usr/lib64/libKF5CoreAddons.so.5.81.0
 
 %files license
 %defattr(0644,root,root,0755)
