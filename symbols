@@ -666,6 +666,7 @@ libKF5CoreAddons.so.5:_ZNK15KPluginMetaData11formFactorsEv
 libKF5CoreAddons.so.5:_ZNK15KPluginMetaData11instantiateEv
 libKF5CoreAddons.so.5:_ZNK15KPluginMetaData11licenseTextEv
 libKF5CoreAddons.so.5:_ZNK15KPluginMetaData11translatorsEv
+libKF5CoreAddons.so.5:_ZNK15KPluginMetaData12bugReportUrlEv
 libKF5CoreAddons.so.5:_ZNK15KPluginMetaData12dependenciesEv
 libKF5CoreAddons.so.5:_ZNK15KPluginMetaData12serviceTypesEv
 libKF5CoreAddons.so.5:_ZNK15KPluginMetaData12staticPluginEv
