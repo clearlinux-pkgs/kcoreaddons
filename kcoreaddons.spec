@@ -7,7 +7,7 @@
 #
 Name     : kcoreaddons
 Version  : 5.105.0
-Release  : 66
+Release  : 67
 URL      : https://download.kde.org/stable/frameworks/5.105/kcoreaddons-5.105.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.105/kcoreaddons-5.105.0.tar.xz
 Source1  : https://download.kde.org/stable/frameworks/5.105/kcoreaddons-5.105.0.tar.xz.sig
@@ -92,23 +92,40 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1681141181
+export SOURCE_DATE_EPOCH=1684790892
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+%cmake ..
+make  %{?_smp_mflags}
+popd
+mkdir -p clr-build-avx2
+pushd clr-build-avx2
+export GCC_IGNORE_WERROR=1
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -Wl,-z,x86-64-v3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd -march=x86-64-v3 "
+export FCFLAGS="$FFLAGS -O3 -Wl,-z,x86-64-v3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd -march=x86-64-v3 "
+export FFLAGS="$FFLAGS -O3 -Wl,-z,x86-64-v3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd -march=x86-64-v3 "
+export CXXFLAGS="$CXXFLAGS -O3 -Wl,-z,x86-64-v3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd -march=x86-64-v3 "
+export CFLAGS="$CFLAGS -march=x86-64-v3 -m64 -Wl,-z,x86-64-v3"
+export CXXFLAGS="$CXXFLAGS -march=x86-64-v3 -m64 -Wl,-z,x86-64-v3"
+export FFLAGS="$FFLAGS -march=x86-64-v3 -m64 -Wl,-z,x86-64-v3"
+export FCFLAGS="$FCFLAGS -march=x86-64-v3 -m64 -Wl,-z,x86-64-v3"
 %cmake ..
 make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1681141181
+export SOURCE_DATE_EPOCH=1684790892
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
 cp %{_builddir}/kcoreaddons-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/680ed9349d3d12bd39ddd36e8c4bc6b1b0cb1c0e || :
@@ -127,15 +144,20 @@ cp %{_builddir}/kcoreaddons-%{version}/LICENSES/LicenseRef-KDE-Accepted-GPL.txt 
 cp %{_builddir}/kcoreaddons-%{version}/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/e458941548e0864907e654fa2e192844ae90fc32 || :
 cp %{_builddir}/kcoreaddons-%{version}/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/e458941548e0864907e654fa2e192844ae90fc32 || :
 cp %{_builddir}/kcoreaddons-%{version}/LICENSES/MPL-1.1.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/b40d491259fdd8faefb41c11fda11d9be6c0bdb1 || :
+pushd clr-build-avx2
+%make_install_v3  || :
+popd
 pushd clr-build
 %make_install
 popd
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
 
 %files bin
 %defattr(-,root,root,-)
+/V3/usr/bin/desktoptojson
 /usr/bin/desktoptojson
 
 %files data
@@ -260,6 +282,7 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
+/V3/usr/lib64/libKF5CoreAddons.so
 /usr/include/KF5/KCoreAddons/KAboutData
 /usr/include/KF5/KCoreAddons/KAutoSaveFile
 /usr/include/KF5/KCoreAddons/KBackup
@@ -358,6 +381,8 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
+/V3/usr/lib64/libKF5CoreAddons.so.5
+/V3/usr/lib64/libKF5CoreAddons.so.5.105.0
 /usr/lib64/libKF5CoreAddons.so.5
 /usr/lib64/libKF5CoreAddons.so.5.105.0
 
