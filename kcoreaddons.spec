@@ -6,11 +6,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kcoreaddons
-Version  : 5.109.0
-Release  : 72
-URL      : https://download.kde.org/stable/frameworks/5.109/kcoreaddons-5.109.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.109/kcoreaddons-5.109.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.109/kcoreaddons-5.109.0.tar.xz.sig
+Version  : 5.110.0
+Release  : 73
+URL      : https://download.kde.org/stable/frameworks/5.110/kcoreaddons-5.110.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.110/kcoreaddons-5.110.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.110/kcoreaddons-5.110.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause BSD-3-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0 MPL-1.1
@@ -84,15 +84,15 @@ license components for the kcoreaddons package.
 
 
 %prep
-%setup -q -n kcoreaddons-5.109.0
-cd %{_builddir}/kcoreaddons-5.109.0
+%setup -q -n kcoreaddons-5.110.0
+cd %{_builddir}/kcoreaddons-5.110.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1692990240
+export SOURCE_DATE_EPOCH=1694442882
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -125,7 +125,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1692990240
+export SOURCE_DATE_EPOCH=1694442882
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kcoreaddons
 cp %{_builddir}/kcoreaddons-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/kcoreaddons/680ed9349d3d12bd39ddd36e8c4bc6b1b0cb1c0e || :
@@ -259,6 +259,7 @@ popd
 /usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/sr@latin/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/sv/LC_MESSAGES/kcoreaddons5_qt.qm
+/usr/share/locale/sw/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/ta/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/te/LC_MESSAGES/kcoreaddons5_qt.qm
 /usr/share/locale/tg/LC_MESSAGES/kcoreaddons5_qt.qm
@@ -380,9 +381,9 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libKF5CoreAddons.so.5.109.0
+/V3/usr/lib64/libKF5CoreAddons.so.5.110.0
 /usr/lib64/libKF5CoreAddons.so.5
-/usr/lib64/libKF5CoreAddons.so.5.109.0
+/usr/lib64/libKF5CoreAddons.so.5.110.0
 
 %files license
 %defattr(0644,root,root,0755)
