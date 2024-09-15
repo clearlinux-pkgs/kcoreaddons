@@ -1,616 +1,125 @@
-libKF6CoreAddons.so.6:kRegisterStaticPluginFunction(QString const&, QString const&, QStaticPlugin)
-libKF6CoreAddons.so.6:KAboutData::addLicense(KAboutLicense::LicenseKey)
-libKF6CoreAddons.so.6:KAboutData::addLicense(KAboutLicense::LicenseKey, KAboutLicense::VersionRestriction)
-libKF6CoreAddons.so.6:KAboutData::setLicense(KAboutLicense::LicenseKey)
-libKF6CoreAddons.so.6:KAboutData::setLicense(KAboutLicense::LicenseKey, KAboutLicense::VersionRestriction)
-libKF6CoreAddons.so.6:KAboutData::setVersion(QByteArray const&)
-libKF6CoreAddons.so.6:KAboutData::setHomepage(QString const&)
-libKF6CoreAddons.so.6:KAboutData::addComponent(QString const&, QString const&, QString const&, QString const&, KAboutLicense::LicenseKey)
-libKF6CoreAddons.so.6:KAboutData::addComponent(QString const&, QString const&, QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KAboutData::setOtherText(QString const&)
-libKF6CoreAddons.so.6:KAboutData::setBugAddress(QByteArray const&)
-libKF6CoreAddons.so.6:KAboutData::setTranslator(QString const&, QString const&)
-libKF6CoreAddons.so.6:KAboutData::addLicenseText(QString const&)
-libKF6CoreAddons.so.6:KAboutData::setDisplayName(QString const&)
-libKF6CoreAddons.so.6:KAboutData::setLicenseText(QString const&)
-libKF6CoreAddons.so.6:KAboutData::setProductName(QByteArray const&)
-libKF6CoreAddons.so.6:KAboutData::setProgramLogo(QVariant const&)
-libKF6CoreAddons.so.6:KAboutData::applicationData()
-libKF6CoreAddons.so.6:KAboutData::setComponentName(QString const&)
-libKF6CoreAddons.so.6:KAboutData::setupCommandLine(QCommandLineParser*)
-libKF6CoreAddons.so.6:KAboutData::addLicenseTextFile(QString const&)
-libKF6CoreAddons.so.6:KAboutData::processCommandLine(QCommandLineParser*)
-libKF6CoreAddons.so.6:KAboutData::setApplicationData(KAboutData const&)
-libKF6CoreAddons.so.6:KAboutData::setDesktopFileName(QString const&)
-libKF6CoreAddons.so.6:KAboutData::setLicenseTextFile(QString const&)
-libKF6CoreAddons.so.6:KAboutData::setCustomAuthorText(QString const&, QString const&)
-libKF6CoreAddons.so.6:KAboutData::setShortDescription(QString const&)
+libKF6CoreAddons.so.6:KAboutComponent::~KAboutComponent()
 libKF6CoreAddons.so.6:KAboutData::aboutTranslationTeam()
-libKF6CoreAddons.so.6:KAboutData::setCopyrightStatement(QString const&)
-libKF6CoreAddons.so.6:KAboutData::setOrganizationDomain(QByteArray const&)
-libKF6CoreAddons.so.6:KAboutData::unsetCustomAuthorText()
+libKF6CoreAddons.so.6:KAboutData::addLicense(KAboutLicense::LicenseKey)
+libKF6CoreAddons.so.6:KAboutData::applicationData()
 libKF6CoreAddons.so.6:KAboutData::applicationDataPointer()
-libKF6CoreAddons.so.6:KAboutData::addAuthor(QString const&, QString const&, QString const&, QString const&, QUrl const&)
-libKF6CoreAddons.so.6:KAboutData::addCredit(QString const&, QString const&, QString const&, QString const&, QUrl const&)
-libKF6CoreAddons.so.6:KAboutData::KAboutData(QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KAboutData::KAboutData(QString const&, QString const&, QString const&, QString const&, KAboutLicense::LicenseKey, QString const&, QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KAboutData::KAboutData(KAboutData const&)
-libKF6CoreAddons.so.6:KAboutData::KAboutData(QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KAboutData::KAboutData(QString const&, QString const&, QString const&, QString const&, KAboutLicense::LicenseKey, QString const&, QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KAboutData::KAboutData(KAboutData const&)
+libKF6CoreAddons.so.6:KAboutData::processCommandLine(QCommandLineParser*)
+libKF6CoreAddons.so.6:KAboutData::setLicense(KAboutLicense::LicenseKey)
+libKF6CoreAddons.so.6:KAboutData::setupCommandLine(QCommandLineParser*)
+libKF6CoreAddons.so.6:KAboutData::unsetCustomAuthorText()
 libKF6CoreAddons.so.6:KAboutData::~KAboutData()
-libKF6CoreAddons.so.6:KAboutData::~KAboutData()
-libKF6CoreAddons.so.6:KAboutData::operator=(KAboutData const&)
-libKF6CoreAddons.so.6:KFileUtils::suggestName(QUrl const&, QString const&)
-libKF6CoreAddons.so.6:KFileUtils::makeSuggestedName(QString const&)
-libKF6CoreAddons.so.6:KFileUtils::findAllUniqueFiles(QList<QString> const&, QList<QString> const&)
-libKF6CoreAddons.so.6:KJsonUtils::readTranslatedValue(QJsonObject const&, QString const&, QJsonValue const&)
-libKF6CoreAddons.so.6:KJsonUtils::readTranslatedString(QJsonObject const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KOSRelease::KOSRelease(QString const&)
-libKF6CoreAddons.so.6:KOSRelease::KOSRelease(QString const&)
-libKF6CoreAddons.so.6:KOSRelease::~KOSRelease()
-libKF6CoreAddons.so.6:KOSRelease::~KOSRelease()
-libKF6CoreAddons.so.6:KUserGroup::allGroupNames(unsigned int)
-libKF6CoreAddons.so.6:KUserGroup::allGroups(unsigned int)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(KGroupId)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(KUser::UIDMode)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(group const*)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(char const*)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(QString const&)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(KUserGroup const&)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(unsigned int)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(KGroupId)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(KUser::UIDMode)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(group const*)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(char const*)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(QString const&)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(KUserGroup const&)
-libKF6CoreAddons.so.6:KUserGroup::KUserGroup(unsigned int)
-libKF6CoreAddons.so.6:KUserGroup::~KUserGroup()
-libKF6CoreAddons.so.6:KUserGroup::~KUserGroup()
-libKF6CoreAddons.so.6:KUserGroup::operator=(KUserGroup const&)
-libKF6CoreAddons.so.6:KCoreAddons::versionString()
-libKF6CoreAddons.so.6:KCoreAddons::version()
-libKF6CoreAddons.so.6:KJobPrivate::speedTimeout()
-libKF6CoreAddons.so.6:KJobPrivate::KJobPrivate()
-libKF6CoreAddons.so.6:KJobPrivate::KJobPrivate()
-libKF6CoreAddons.so.6:KJobPrivate::~KJobPrivate()
-libKF6CoreAddons.so.6:KJobPrivate::~KJobPrivate()
-libKF6CoreAddons.so.6:KJobPrivate::~KJobPrivate()
-libKF6CoreAddons.so.6:KMemoryInfo::KMemoryInfo(KMemoryInfo const&)
-libKF6CoreAddons.so.6:KMemoryInfo::KMemoryInfo()
-libKF6CoreAddons.so.6:KMemoryInfo::KMemoryInfo(KMemoryInfo const&)
-libKF6CoreAddons.so.6:KMemoryInfo::KMemoryInfo()
-libKF6CoreAddons.so.6:KMemoryInfo::~KMemoryInfo()
-libKF6CoreAddons.so.6:KMemoryInfo::~KMemoryInfo()
-libKF6CoreAddons.so.6:KMemoryInfo::operator=(KMemoryInfo const&)
-libKF6CoreAddons.so.6:KTextToHTML::convertToHtml(QString const&, QFlags<KTextToHTML::Option> const&, int, int)
-libKF6CoreAddons.so.6:KAboutPerson::fromJSON(QJsonObject const&)
-libKF6CoreAddons.so.6:KAboutPerson::KAboutPerson(QString const&, QString const&, QString const&, QString const&, QUrl const&)
-libKF6CoreAddons.so.6:KAboutPerson::KAboutPerson(KAboutPerson const&)
-libKF6CoreAddons.so.6:KAboutPerson::KAboutPerson(QString const&, QString const&, QString const&, QString const&, QUrl const&)
-libKF6CoreAddons.so.6:KAboutPerson::KAboutPerson(KAboutPerson const&)
-libKF6CoreAddons.so.6:KAboutPerson::~KAboutPerson()
-libKF6CoreAddons.so.6:KAboutPerson::~KAboutPerson()
-libKF6CoreAddons.so.6:KAboutPerson::operator=(KAboutPerson const&)
-libKF6CoreAddons.so.6:KProcessList::processInfo(long long)
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::KProcessInfo(KProcessList::KProcessInfo const&)
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::KProcessInfo()
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::KProcessInfo(long long, QString const&, QString const&)
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::KProcessInfo(long long, QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::KProcessInfo(KProcessList::KProcessInfo const&)
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::KProcessInfo()
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::KProcessInfo(long long, QString const&, QString const&)
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::KProcessInfo(long long, QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::~KProcessInfo()
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::~KProcessInfo()
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::operator=(KProcessList::KProcessInfo const&)
-libKF6CoreAddons.so.6:KProcessList::processInfoList()
-libKF6CoreAddons.so.6:KUrlMimeData::setMetaData(QMap<QString, QString> const&, QMimeData*)
-libKF6CoreAddons.so.6:KUrlMimeData::setSourceId(QMimeData*)
-libKF6CoreAddons.so.6:KUrlMimeData::mimeDataTypes()
-libKF6CoreAddons.so.6:KUrlMimeData::urlsFromMimeData(QMimeData const*, QFlags<KUrlMimeData::DecodeOption>, QMap<QString, QString>*)
-libKF6CoreAddons.so.6:KUrlMimeData::exportUrlsToPortal(QMimeData*)
-libKF6CoreAddons.so.6:KUrlMimeData::isDocumentsPortalAvailable()
-libKF6CoreAddons.so.6:KUrlMimeData::setUrls(QList<QUrl> const&, QList<QUrl> const&, QMimeData*)
-libKF6CoreAddons.so.6:KAboutLicense::byKeyword(QString const&)
-libKF6CoreAddons.so.6:KAboutLicense::KAboutLicense(KAboutLicense const&)
-libKF6CoreAddons.so.6:KAboutLicense::KAboutLicense()
-libKF6CoreAddons.so.6:KAboutLicense::KAboutLicense(KAboutLicense const&)
 libKF6CoreAddons.so.6:KAboutLicense::KAboutLicense()
 libKF6CoreAddons.so.6:KAboutLicense::~KAboutLicense()
-libKF6CoreAddons.so.6:KAboutLicense::~KAboutLicense()
-libKF6CoreAddons.so.6:KAboutLicense::operator=(KAboutLicense const&)
-libKF6CoreAddons.so.6:KAutoSaveFile::staleFiles(QUrl const&, QString const&)
-libKF6CoreAddons.so.6:KAutoSaveFile::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KAutoSaveFile::qt_metacast(char const*)
-libKF6CoreAddons.so.6:KAutoSaveFile::releaseLock()
-libKF6CoreAddons.so.6:KAutoSaveFile::allStaleFiles(QString const&)
-libKF6CoreAddons.so.6:KAutoSaveFile::setManagedFile(QUrl const&)
+libKF6CoreAddons.so.6:KAboutPerson::~KAboutPerson()
+libKF6CoreAddons.so.6:KAutoSaveFile::KAutoSaveFile(QObject*)
 libKF6CoreAddons.so.6:KAutoSaveFile::open(QFlags<QIODeviceBase::OpenModeFlag>)
-libKF6CoreAddons.so.6:KAutoSaveFile::KAutoSaveFile(QObject*)
-libKF6CoreAddons.so.6:KAutoSaveFile::KAutoSaveFile(QUrl const&, QObject*)
-libKF6CoreAddons.so.6:KAutoSaveFile::KAutoSaveFile(QObject*)
-libKF6CoreAddons.so.6:KAutoSaveFile::KAutoSaveFile(QUrl const&, QObject*)
+libKF6CoreAddons.so.6:KAutoSaveFile::releaseLock()
 libKF6CoreAddons.so.6:KAutoSaveFile::~KAutoSaveFile()
-libKF6CoreAddons.so.6:KAutoSaveFile::~KAutoSaveFile()
-libKF6CoreAddons.so.6:KAutoSaveFile::~KAutoSaveFile()
-libKF6CoreAddons.so.6:KCompositeJob::slotResult(KJob*)
-libKF6CoreAddons.so.6:KCompositeJob::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KCompositeJob::qt_metacast(char const*)
+libKF6CoreAddons.so.6:KCompositeJob::KCompositeJob(QObject*)
+libKF6CoreAddons.so.6:KCompositeJob::addSubjob(KJob*)
 libKF6CoreAddons.so.6:KCompositeJob::clearSubjobs()
 libKF6CoreAddons.so.6:KCompositeJob::removeSubjob(KJob*)
-libKF6CoreAddons.so.6:KCompositeJob::slotInfoMessage(KJob*, QString const&)
-libKF6CoreAddons.so.6:KCompositeJob::addSubjob(KJob*)
-libKF6CoreAddons.so.6:KCompositeJob::KCompositeJob(QObject*)
-libKF6CoreAddons.so.6:KCompositeJob::KCompositeJob(QObject*)
+libKF6CoreAddons.so.6:KCompositeJob::slotResult(KJob*)
 libKF6CoreAddons.so.6:KCompositeJob::~KCompositeJob()
-libKF6CoreAddons.so.6:KCompositeJob::~KCompositeJob()
-libKF6CoreAddons.so.6:KCompositeJob::~KCompositeJob()
-libKF6CoreAddons.so.6:KFuzzyMatcher::matchSimple(QStringView, QStringView)
-libKF6CoreAddons.so.6:KFuzzyMatcher::matchedRanges(QStringView, QStringView, KFuzzyMatcher::RangeType)
-libKF6CoreAddons.so.6:KFuzzyMatcher::match(QStringView, QStringView)
-libKF6CoreAddons.so.6:KJobUiDelegate::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KJobUiDelegate::qt_metacast(char const*)
-libKF6CoreAddons.so.6:KJobUiDelegate::slotWarning(KJob*, QString const&)
-libKF6CoreAddons.so.6:KJobUiDelegate::showErrorMessage()
+libKF6CoreAddons.so.6:KCompositeJobPrivate::KCompositeJobPrivate()
+libKF6CoreAddons.so.6:KCompositeJobPrivate::~KCompositeJobPrivate()
+libKF6CoreAddons.so.6:KCoreAddons::version()
+libKF6CoreAddons.so.6:KCoreAddons::versionString()
+libKF6CoreAddons.so.6:KDirWatch::KDirWatch(QObject*)
+libKF6CoreAddons.so.6:KDirWatch::event(QEvent*)
+libKF6CoreAddons.so.6:KDirWatch::exists()
+libKF6CoreAddons.so.6:KDirWatch::isStopped()
+libKF6CoreAddons.so.6:KDirWatch::self()
+libKF6CoreAddons.so.6:KDirWatch::stopScan()
+libKF6CoreAddons.so.6:KDirWatch::~KDirWatch()
+libKF6CoreAddons.so.6:KFileSystemType::fileSystemName(KFileSystemType::Type)
+libKF6CoreAddons.so.6:KFormat::~KFormat()
+libKF6CoreAddons.so.6:KGroupId::currentEffectiveGroupId()
+libKF6CoreAddons.so.6:KGroupId::currentGroupId()
+libKF6CoreAddons.so.6:KJob::KJob(QObject*)
+libKF6CoreAddons.so.6:KJob::doKill()
+libKF6CoreAddons.so.6:KJob::doResume()
+libKF6CoreAddons.so.6:KJob::doSuspend()
+libKF6CoreAddons.so.6:KJob::emitResult()
+libKF6CoreAddons.so.6:KJob::exec()
+libKF6CoreAddons.so.6:KJob::kill(KJob::KillVerbosity)
+libKF6CoreAddons.so.6:KJob::resume()
+libKF6CoreAddons.so.6:KJob::setAutoDelete(bool)
+libKF6CoreAddons.so.6:KJob::setCapabilities(QFlags<KJob::Capability>)
+libKF6CoreAddons.so.6:KJob::setError(int)
+libKF6CoreAddons.so.6:KJob::setFinishedNotificationHidden(bool)
+libKF6CoreAddons.so.6:KJob::setProgressUnit(KJob::Unit)
+libKF6CoreAddons.so.6:KJob::setUiDelegate(KJobUiDelegate*)
+libKF6CoreAddons.so.6:KJob::suspend()
+libKF6CoreAddons.so.6:KJob::~KJob()
+libKF6CoreAddons.so.6:KJobPrivate::KJobPrivate()
+libKF6CoreAddons.so.6:KJobPrivate::speedTimeout()
+libKF6CoreAddons.so.6:KJobPrivate::~KJobPrivate()
+libKF6CoreAddons.so.6:KJobTrackerInterface::KJobTrackerInterface(QObject*)
+libKF6CoreAddons.so.6:KJobTrackerInterface::finished(KJob*)
+libKF6CoreAddons.so.6:KJobTrackerInterface::registerJob(KJob*)
+libKF6CoreAddons.so.6:KJobTrackerInterface::resumed(KJob*)
+libKF6CoreAddons.so.6:KJobTrackerInterface::suspended(KJob*)
+libKF6CoreAddons.so.6:KJobTrackerInterface::unregisterJob(KJob*)
+libKF6CoreAddons.so.6:KJobTrackerInterface::~KJobTrackerInterface()
+libKF6CoreAddons.so.6:KJobUiDelegate::KJobUiDelegate(QFlags<KJobUiDelegate::Flag>)
 libKF6CoreAddons.so.6:KJobUiDelegate::setAutoErrorHandlingEnabled(bool)
 libKF6CoreAddons.so.6:KJobUiDelegate::setAutoWarningHandlingEnabled(bool)
 libKF6CoreAddons.so.6:KJobUiDelegate::setJob(KJob*)
-libKF6CoreAddons.so.6:KJobUiDelegate::KJobUiDelegate(QFlags<KJobUiDelegate::Flag>)
-libKF6CoreAddons.so.6:KJobUiDelegate::KJobUiDelegate(QFlags<KJobUiDelegate::Flag>)
+libKF6CoreAddons.so.6:KJobUiDelegate::showErrorMessage()
 libKF6CoreAddons.so.6:KJobUiDelegate::~KJobUiDelegate()
-libKF6CoreAddons.so.6:KJobUiDelegate::~KJobUiDelegate()
-libKF6CoreAddons.so.6:KJobUiDelegate::~KJobUiDelegate()
-libKF6CoreAddons.so.6:KMacroExpander::expandMacros(QString const&, QHash<QChar, QList<QString> > const&, QChar)
-libKF6CoreAddons.so.6:KMacroExpander::expandMacros(QString const&, QHash<QChar, QString> const&, QChar)
-libKF6CoreAddons.so.6:KMacroExpander::expandMacros(QString const&, QHash<QString, QList<QString> > const&, QChar)
-libKF6CoreAddons.so.6:KMacroExpander::expandMacros(QString const&, QHash<QString, QString> const&, QChar)
-libKF6CoreAddons.so.6:KMacroExpander::expandMacrosShellQuote(QString const&, QHash<QChar, QList<QString> > const&, QChar)
-libKF6CoreAddons.so.6:KMacroExpander::expandMacrosShellQuote(QString const&, QHash<QChar, QString> const&, QChar)
-libKF6CoreAddons.so.6:KMacroExpander::expandMacrosShellQuote(QString const&, QHash<QString, QList<QString> > const&, QChar)
-libKF6CoreAddons.so.6:KMacroExpander::expandMacrosShellQuote(QString const&, QHash<QString, QString> const&, QChar)
-libKF6CoreAddons.so.6:KNetworkMounts::clearCache()
-libKF6CoreAddons.so.6:KNetworkMounts::isSlowPath(QString const&, KNetworkMounts::KNetworkMountsType)
-libKF6CoreAddons.so.6:KNetworkMounts::setEnabled(bool)
-libKF6CoreAddons.so.6:KNetworkMounts::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KNetworkMounts::qt_metacast(char const*)
-libKF6CoreAddons.so.6:KNetworkMounts::canonicalSymlinkPath(QString const&)
-libKF6CoreAddons.so.6:KNetworkMounts::isOptionEnabledForPath(QString const&, KNetworkMounts::KNetworkMountOption)
-libKF6CoreAddons.so.6:KNetworkMounts::self()
-libKF6CoreAddons.so.6:KNetworkMounts::sync()
-libKF6CoreAddons.so.6:KNetworkMounts::addPath(QString const&, KNetworkMounts::KNetworkMountsType)
-libKF6CoreAddons.so.6:KNetworkMounts::setPaths(QList<QString> const&, KNetworkMounts::KNetworkMountsType)
-libKF6CoreAddons.so.6:KNetworkMounts::setOption(KNetworkMounts::KNetworkMountOption, bool)
-libKF6CoreAddons.so.6:KPluginFactory::loadFactory(KPluginMetaData const&)
-libKF6CoreAddons.so.6:KPluginFactory::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KPluginFactory::qt_metacast(char const*)
-libKF6CoreAddons.so.6:KPluginFactory::setMetaData(KPluginMetaData const&)
-libKF6CoreAddons.so.6:KPluginFactory::registerPlugin(QMetaObject const*, QObject* (*)(QWidget*, QObject*, KPluginMetaData const&, QList<QVariant> const&))
-libKF6CoreAddons.so.6:KPluginFactory::logFailedInstantiationMessage(KPluginMetaData)
-libKF6CoreAddons.so.6:KPluginFactory::logFailedInstantiationMessage(char const*, KPluginMetaData)
-libKF6CoreAddons.so.6:KPluginFactory::create(char const*, QWidget*, QObject*, QList<QVariant> const&)
-libKF6CoreAddons.so.6:KPluginFactory::KPluginFactory()
-libKF6CoreAddons.so.6:KPluginFactory::KPluginFactory()
-libKF6CoreAddons.so.6:KPluginFactory::~KPluginFactory()
-libKF6CoreAddons.so.6:KPluginFactory::~KPluginFactory()
-libKF6CoreAddons.so.6:KPluginFactory::~KPluginFactory()
-libKF6CoreAddons.so.6:KSignalHandler::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KSignalHandler::qt_metacast(char const*)
-libKF6CoreAddons.so.6:KSignalHandler::watchSignal(int)
-libKF6CoreAddons.so.6:KSignalHandler::signalReceived(int)
-libKF6CoreAddons.so.6:KSignalHandler::self()
-libKF6CoreAddons.so.6:KSignalHandler::~KSignalHandler()
-libKF6CoreAddons.so.6:KSignalHandler::~KSignalHandler()
-libKF6CoreAddons.so.6:KSignalHandler::~KSignalHandler()
-libKF6CoreAddons.so.6:KStringHandler::logicalLength(QString const&)
-libKF6CoreAddons.so.6:KStringHandler::preProcessWrap(QString const&)
-libKF6CoreAddons.so.6:KStringHandler::obscure(QString const&)
-libKF6CoreAddons.so.6:KStringHandler::tagUrls(QString const&)
-libKF6CoreAddons.so.6:KStringHandler::capwords(QList<QString> const&)
-libKF6CoreAddons.so.6:KStringHandler::capwords(QString const&)
-libKF6CoreAddons.so.6:KStringHandler::csqueeze(QString const&, int)
-libKF6CoreAddons.so.6:KStringHandler::lsqueeze(QString const&, int)
-libKF6CoreAddons.so.6:KStringHandler::rsqueeze(QString const&, int)
-libKF6CoreAddons.so.6:KStringHandler::perlSplit(QStringView, QStringView, int)
-libKF6CoreAddons.so.6:KStringHandler::perlSplit(QRegularExpression const&, QString const&, int)
-libKF6CoreAddons.so.6:KStringHandler::perlSplit(QChar const&, QString const&, int)
-libKF6CoreAddons.so.6:KStringHandler::perlSplit(QString const&, QString const&, int)
-libKF6CoreAddons.so.6:KAboutComponent::KAboutComponent(QString const&, QString const&, QString const&, QString const&, KAboutLicense::LicenseKey)
-libKF6CoreAddons.so.6:KAboutComponent::KAboutComponent(QString const&, QString const&, QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KAboutComponent::KAboutComponent(KAboutComponent const&)
-libKF6CoreAddons.so.6:KAboutComponent::KAboutComponent(QString const&, QString const&, QString const&, QString const&, KAboutLicense::LicenseKey)
-libKF6CoreAddons.so.6:KAboutComponent::KAboutComponent(QString const&, QString const&, QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KAboutComponent::KAboutComponent(KAboutComponent const&)
-libKF6CoreAddons.so.6:KAboutComponent::~KAboutComponent()
-libKF6CoreAddons.so.6:KAboutComponent::~KAboutComponent()
-libKF6CoreAddons.so.6:KAboutComponent::operator=(KAboutComponent const&)
-libKF6CoreAddons.so.6:KFileSystemType::fileSystemName(KFileSystemType::Type)
-libKF6CoreAddons.so.6:KFileSystemType::fileSystemType(QString const&)
-libKF6CoreAddons.so.6:KPluginMetaData::findPlugins(QString const&, std::function<bool (KPluginMetaData const&)>, QFlags<KPluginMetaData::KPluginMetaDataOption>)
-libKF6CoreAddons.so.6:KPluginMetaData::fromJsonFile(QString const&)
-libKF6CoreAddons.so.6:KPluginMetaData::findPluginById(QString const&, QString const&, QFlags<KPluginMetaData::KPluginMetaDataOption>)
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData(QJsonObject const&, QString const&)
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData(QPluginLoader const&, QFlags<KPluginMetaData::KPluginMetaDataOption>)
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData(QString const&, QFlags<KPluginMetaData::KPluginMetaDataOption>)
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData(KPluginMetaData const&)
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData()
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData(QJsonObject const&, QString const&)
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData(QPluginLoader const&, QFlags<KPluginMetaData::KPluginMetaDataOption>)
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData(QString const&, QFlags<KPluginMetaData::KPluginMetaDataOption>)
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData(KPluginMetaData const&)
-libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData()
-libKF6CoreAddons.so.6:KPluginMetaData::~KPluginMetaData()
-libKF6CoreAddons.so.6:KPluginMetaData::~KPluginMetaData()
-libKF6CoreAddons.so.6:KPluginMetaData::operator=(KPluginMetaData const&)
-libKF6CoreAddons.so.6:KRuntimePlatform::runtimePlatform()
-libKF6CoreAddons.so.6:KSharedDataCache::deleteCache(QString const&)
-libKF6CoreAddons.so.6:KSharedDataCache::setTimestamp(unsigned int)
-libKF6CoreAddons.so.6:KSharedDataCache::setEvictionPolicy(KSharedDataCache::EvictionPolicy)
-libKF6CoreAddons.so.6:KSharedDataCache::clear()
-libKF6CoreAddons.so.6:KSharedDataCache::insert(QString const&, QByteArray const&)
-libKF6CoreAddons.so.6:KSharedDataCache::KSharedDataCache(QString const&, unsigned int, unsigned int)
-libKF6CoreAddons.so.6:KSharedDataCache::KSharedDataCache(QString const&, unsigned int, unsigned int)
-libKF6CoreAddons.so.6:KSharedDataCache::~KSharedDataCache()
-libKF6CoreAddons.so.6:KSharedDataCache::~KSharedDataCache()
-libKF6CoreAddons.so.6:KListOpenFilesJob::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KListOpenFilesJob::qt_metacast(char const*)
 libKF6CoreAddons.so.6:KListOpenFilesJob::start()
-libKF6CoreAddons.so.6:KListOpenFilesJob::KListOpenFilesJob(QString const&)
-libKF6CoreAddons.so.6:KListOpenFilesJob::KListOpenFilesJob(QString const&)
 libKF6CoreAddons.so.6:KListOpenFilesJob::~KListOpenFilesJob()
-libKF6CoreAddons.so.6:KListOpenFilesJob::~KListOpenFilesJob()
-libKF6CoreAddons.so.6:KListOpenFilesJob::~KListOpenFilesJob()
-libKF6CoreAddons.so.6:KCharMacroExpander::expandPlainMacro(QString const&, int, QList<QString>&)
-libKF6CoreAddons.so.6:KCharMacroExpander::expandEscapedMacro(QString const&, int, QList<QString>&)
+libKF6CoreAddons.so.6:KMacroExpanderBase::KMacroExpanderBase(QChar)
 libKF6CoreAddons.so.6:KMacroExpanderBase::expandMacros(QString&)
-libKF6CoreAddons.so.6:KMacroExpanderBase::setEscapeChar(QChar)
-libKF6CoreAddons.so.6:KMacroExpanderBase::expandPlainMacro(QString const&, int, QList<QString>&)
-libKF6CoreAddons.so.6:KMacroExpanderBase::expandEscapedMacro(QString const&, int, QList<QString>&)
 libKF6CoreAddons.so.6:KMacroExpanderBase::expandMacrosShellQuote(QString&)
-libKF6CoreAddons.so.6:KMacroExpanderBase::expandMacrosShellQuote(QString&, int&)
-libKF6CoreAddons.so.6:KMacroExpanderBase::KMacroExpanderBase(QChar)
-libKF6CoreAddons.so.6:KMacroExpanderBase::KMacroExpanderBase(QChar)
+libKF6CoreAddons.so.6:KMacroExpanderBase::setEscapeChar(QChar)
 libKF6CoreAddons.so.6:KMacroExpanderBase::~KMacroExpanderBase()
-libKF6CoreAddons.so.6:KMacroExpanderBase::~KMacroExpanderBase()
-libKF6CoreAddons.so.6:KMacroExpanderBase::~KMacroExpanderBase()
-libKF6CoreAddons.so.6:KWordMacroExpander::expandPlainMacro(QString const&, int, QList<QString>&)
-libKF6CoreAddons.so.6:KWordMacroExpander::expandEscapedMacro(QString const&, int, QList<QString>&)
-libKF6CoreAddons.so.6:KCompositeJobPrivate::KCompositeJobPrivate()
-libKF6CoreAddons.so.6:KCompositeJobPrivate::KCompositeJobPrivate()
-libKF6CoreAddons.so.6:KCompositeJobPrivate::~KCompositeJobPrivate()
-libKF6CoreAddons.so.6:KCompositeJobPrivate::~KCompositeJobPrivate()
-libKF6CoreAddons.so.6:KCompositeJobPrivate::~KCompositeJobPrivate()
-libKF6CoreAddons.so.6:KJobTrackerInterface::description(KJob*, QString const&, std::pair<QString, QString> const&, std::pair<QString, QString> const&)
-libKF6CoreAddons.so.6:KJobTrackerInterface::infoMessage(KJob*, QString const&)
-libKF6CoreAddons.so.6:KJobTrackerInterface::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KJobTrackerInterface::qt_metacast(char const*)
-libKF6CoreAddons.so.6:KJobTrackerInterface::registerJob(KJob*)
-libKF6CoreAddons.so.6:KJobTrackerInterface::totalAmount(KJob*, KJob::Unit, unsigned long long)
-libKF6CoreAddons.so.6:KJobTrackerInterface::unregisterJob(KJob*)
-libKF6CoreAddons.so.6:KJobTrackerInterface::processedAmount(KJob*, KJob::Unit, unsigned long long)
-libKF6CoreAddons.so.6:KJobTrackerInterface::speed(KJob*, unsigned long)
-libKF6CoreAddons.so.6:KJobTrackerInterface::percent(KJob*, unsigned long)
-libKF6CoreAddons.so.6:KJobTrackerInterface::resumed(KJob*)
-libKF6CoreAddons.so.6:KJobTrackerInterface::warning(KJob*, QString const&)
-libKF6CoreAddons.so.6:KJobTrackerInterface::finished(KJob*)
-libKF6CoreAddons.so.6:KJobTrackerInterface::suspended(KJob*)
-libKF6CoreAddons.so.6:KJobTrackerInterface::KJobTrackerInterface(QObject*)
-libKF6CoreAddons.so.6:KJobTrackerInterface::KJobTrackerInterface(QObject*)
-libKF6CoreAddons.so.6:KJobTrackerInterface::~KJobTrackerInterface()
-libKF6CoreAddons.so.6:KJobTrackerInterface::~KJobTrackerInterface()
-libKF6CoreAddons.so.6:KJobTrackerInterface::~KJobTrackerInterface()
-libKF6CoreAddons.so.6:KJob::emitResult()
-libKF6CoreAddons.so.6:KJob::setPercent(unsigned long)
-libKF6CoreAddons.so.6:KJob::description(KJob*, QString const&, std::pair<QString, QString> const&, std::pair<QString, QString> const&)
-libKF6CoreAddons.so.6:KJob::emitPercent(unsigned long long, unsigned long long)
-libKF6CoreAddons.so.6:KJob::infoMessage(KJob*, QString const&)
-libKF6CoreAddons.so.6:KJob::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KJob::qt_metacast(char const*)
-libKF6CoreAddons.so.6:KJob::setErrorText(QString const&)
-libKF6CoreAddons.so.6:KJob::processedSize(KJob*, unsigned long long)
-libKF6CoreAddons.so.6:KJob::setAutoDelete(bool)
-libKF6CoreAddons.so.6:KJob::setUiDelegate(KJobUiDelegate*)
-libKF6CoreAddons.so.6:KJob::percentChanged(KJob*, unsigned long, KJob::QPrivateSignal)
-libKF6CoreAddons.so.6:KJob::setTotalAmount(KJob::Unit, unsigned long long)
-libKF6CoreAddons.so.6:KJob::setCapabilities(QFlags<KJob::Capability>)
-libKF6CoreAddons.so.6:KJob::setProgressUnit(KJob::Unit)
-libKF6CoreAddons.so.6:KJob::setProcessedAmount(KJob::Unit, unsigned long long)
-libKF6CoreAddons.so.6:KJob::totalAmountChanged(KJob*, KJob::Unit, unsigned long long, KJob::QPrivateSignal)
-libKF6CoreAddons.so.6:KJob::processedAmountChanged(KJob*, KJob::Unit, unsigned long long, KJob::QPrivateSignal)
-libKF6CoreAddons.so.6:KJob::setFinishedNotificationHidden(bool)
-libKF6CoreAddons.so.6:KJob::exec()
-libKF6CoreAddons.so.6:KJob::kill(KJob::KillVerbosity)
-libKF6CoreAddons.so.6:KJob::speed(KJob*, unsigned long)
-libKF6CoreAddons.so.6:KJob::doKill()
-libKF6CoreAddons.so.6:KJob::result(KJob*, KJob::QPrivateSignal)
-libKF6CoreAddons.so.6:KJob::resume()
-libKF6CoreAddons.so.6:KJob::resumed(KJob*, KJob::QPrivateSignal)
-libKF6CoreAddons.so.6:KJob::suspend()
-libKF6CoreAddons.so.6:KJob::warning(KJob*, QString const&)
-libKF6CoreAddons.so.6:KJob::doResume()
-libKF6CoreAddons.so.6:KJob::finished(KJob*, KJob::QPrivateSignal)
-libKF6CoreAddons.so.6:KJob::setError(int)
-libKF6CoreAddons.so.6:KJob::doSuspend()
-libKF6CoreAddons.so.6:KJob::emitSpeed(unsigned long)
-libKF6CoreAddons.so.6:KJob::suspended(KJob*, KJob::QPrivateSignal)
-libKF6CoreAddons.so.6:KJob::totalSize(KJob*, unsigned long long)
-libKF6CoreAddons.so.6:KJob::KJob(QObject*)
-libKF6CoreAddons.so.6:KJob::KJob(QObject*)
-libKF6CoreAddons.so.6:KJob::~KJob()
-libKF6CoreAddons.so.6:KJob::~KJob()
-libKF6CoreAddons.so.6:KJob::~KJob()
-libKF6CoreAddons.so.6:KUser::allUserNames(unsigned int)
-libKF6CoreAddons.so.6:KUser::allUsers(unsigned int)
-libKF6CoreAddons.so.6:KUser::KUser(KUserId)
-libKF6CoreAddons.so.6:KUser::KUser(KUser::UIDMode)
-libKF6CoreAddons.so.6:KUser::KUser(passwd const*)
-libKF6CoreAddons.so.6:KUser::KUser(char const*)
-libKF6CoreAddons.so.6:KUser::KUser(QString const&)
-libKF6CoreAddons.so.6:KUser::KUser(KUser const&)
-libKF6CoreAddons.so.6:KUser::KUser(unsigned int)
-libKF6CoreAddons.so.6:KUser::KUser(KUserId)
-libKF6CoreAddons.so.6:KUser::KUser(KUser::UIDMode)
-libKF6CoreAddons.so.6:KUser::KUser(passwd const*)
-libKF6CoreAddons.so.6:KUser::KUser(char const*)
-libKF6CoreAddons.so.6:KUser::KUser(QString const&)
-libKF6CoreAddons.so.6:KUser::KUser(KUser const&)
-libKF6CoreAddons.so.6:KUser::KUser(unsigned int)
-libKF6CoreAddons.so.6:KUser::~KUser()
-libKF6CoreAddons.so.6:KUser::~KUser()
-libKF6CoreAddons.so.6:KUser::operator=(KUser const&)
-libKF6CoreAddons.so.6:KShell::tildeExpand(QString const&)
-libKF6CoreAddons.so.6:KShell::tildeCollapse(QString const&)
-libKF6CoreAddons.so.6:KShell::joinArgs(QList<QString> const&)
-libKF6CoreAddons.so.6:KShell::quoteArg(QString const&)
-libKF6CoreAddons.so.6:KShell::splitArgs(QString const&, QFlags<KShell::Option>, KShell::Errors*)
-libKF6CoreAddons.so.6:KBackup::simpleBackupFile(QString const&, QString const&, QString const&)
-libKF6CoreAddons.so.6:KBackup::numberedBackupFile(QString const&, QString const&, QString const&, unsigned int)
-libKF6CoreAddons.so.6:KFormat::KFormat(QLocale const&)
-libKF6CoreAddons.so.6:KFormat::KFormat(KFormat const&)
-libKF6CoreAddons.so.6:KFormat::KFormat(QLocale const&)
-libKF6CoreAddons.so.6:KFormat::KFormat(KFormat const&)
-libKF6CoreAddons.so.6:KFormat::~KFormat()
-libKF6CoreAddons.so.6:KFormat::~KFormat()
-libKF6CoreAddons.so.6:KFormat::operator=(KFormat const&)
-libKF6CoreAddons.so.6:KRandom::randomString(int)
-libKF6CoreAddons.so.6:KUserId::currentUserId()
-libKF6CoreAddons.so.6:KUserId::currentEffectiveUserId()
-libKF6CoreAddons.so.6:KUserId::fromName(QString const&)
-libKF6CoreAddons.so.6:KGroupId::currentGroupId()
-libKF6CoreAddons.so.6:KGroupId::currentEffectiveGroupId()
-libKF6CoreAddons.so.6:KGroupId::fromName(QString const&)
-libKF6CoreAddons.so.6:KLibexec::pathCandidates(QString const&)
-libKF6CoreAddons.so.6:KLibexec::pathFromAddress(QString const&, void*)
-libKF6CoreAddons.so.6:KProcess::setProgram(QList<QString> const&)
-libKF6CoreAddons.so.6:KProcess::setProgram(QString const&, QList<QString> const&)
-libKF6CoreAddons.so.6:KProcess::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KProcess::qt_metacast(char const*)
-libKF6CoreAddons.so.6:KProcess::clearProgram()
-libKF6CoreAddons.so.6:KProcess::startDetached(QList<QString> const&)
-libKF6CoreAddons.so.6:KProcess::startDetached(QString const&, QList<QString> const&)
-libKF6CoreAddons.so.6:KProcess::startDetached()
-libKF6CoreAddons.so.6:KProcess::setNextOpenMode(QFlags<QIODeviceBase::OpenModeFlag>)
-libKF6CoreAddons.so.6:KProcess::setShellCommand(QString const&)
+libKF6CoreAddons.so.6:KMemoryInfo::KMemoryInfo()
+libKF6CoreAddons.so.6:KMemoryInfo::~KMemoryInfo()
+libKF6CoreAddons.so.6:KNetworkMounts::clearCache()
+libKF6CoreAddons.so.6:KNetworkMounts::self()
+libKF6CoreAddons.so.6:KNetworkMounts::setEnabled(bool)
+libKF6CoreAddons.so.6:KNetworkMounts::sync()
+libKF6CoreAddons.so.6:KOSRelease::~KOSRelease()
+libKF6CoreAddons.so.6:KPluginFactory::KPluginFactory()
+libKF6CoreAddons.so.6:KPluginFactory::logFailedInstantiationMessage(KPluginMetaData)
+libKF6CoreAddons.so.6:KPluginFactory::~KPluginFactory()
+libKF6CoreAddons.so.6:KPluginMetaData::KPluginMetaData()
+libKF6CoreAddons.so.6:KPluginMetaData::~KPluginMetaData()
+libKF6CoreAddons.so.6:KProcess::KProcess(QObject*)
 libKF6CoreAddons.so.6:KProcess::clearEnvironment()
+libKF6CoreAddons.so.6:KProcess::clearProgram()
+libKF6CoreAddons.so.6:KProcess::execute(int)
+libKF6CoreAddons.so.6:KProcess::setNextOpenMode(QFlags<QIODeviceBase::OpenModeFlag>)
 libKF6CoreAddons.so.6:KProcess::setOutputChannelMode(KProcess::OutputChannelMode)
 libKF6CoreAddons.so.6:KProcess::start()
-libKF6CoreAddons.so.6:KProcess::setEnv(QString const&, QString const&, bool)
-libKF6CoreAddons.so.6:KProcess::execute(QList<QString> const&, int)
-libKF6CoreAddons.so.6:KProcess::execute(QString const&, QList<QString> const&, int)
-libKF6CoreAddons.so.6:KProcess::execute(int)
-libKF6CoreAddons.so.6:KProcess::unsetEnv(QString const&)
-libKF6CoreAddons.so.6:KProcess::KProcess(QObject*)
-libKF6CoreAddons.so.6:KProcess::KProcess(QObject*)
+libKF6CoreAddons.so.6:KProcess::startDetached()
 libKF6CoreAddons.so.6:KProcess::~KProcess()
-libKF6CoreAddons.so.6:KProcess::~KProcess()
-libKF6CoreAddons.so.6:KProcess::~KProcess()
-libKF6CoreAddons.so.6:KProcess::operator<<(QList<QString> const&)
-libKF6CoreAddons.so.6:KProcess::operator<<(QString const&)
-libKF6CoreAddons.so.6:KSandbox::makeHostContext(QProcess const&)
-libKF6CoreAddons.so.6:KSandbox::startHostProcess(QProcess&, QFlags<QIODeviceBase::OpenModeFlag>)
-libKF6CoreAddons.so.6:KSandbox::isSnap()
-libKF6CoreAddons.so.6:KSandbox::isInside()
+libKF6CoreAddons.so.6:KProcessList::KProcessInfo::KProcessInfo()
+libKF6CoreAddons.so.6:KProcessList::KProcessInfo::~KProcessInfo()
+libKF6CoreAddons.so.6:KProcessList::processInfoList()
+libKF6CoreAddons.so.6:KRandom::randomString(int)
+libKF6CoreAddons.so.6:KRuntimePlatform::runtimePlatform()
 libKF6CoreAddons.so.6:KSandbox::isFlatpak()
-libKF6CoreAddons.so.6:KDirWatch::removeFile(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::setCreated(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::setDeleted(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::qt_metacall(QMetaObject::Call, int, void**)
-libKF6CoreAddons.so.6:KDirWatch::qt_metacast(char const*)
-libKF6CoreAddons.so.6:KDirWatch::stopDirScan(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::restartDirScan(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::self()
-libKF6CoreAddons.so.6:KDirWatch::dirty(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::event(QEvent*)
-libKF6CoreAddons.so.6:KDirWatch::addDir(QString const&, QFlags<KDirWatch::WatchMode>)
-libKF6CoreAddons.so.6:KDirWatch::exists()
-libKF6CoreAddons.so.6:KDirWatch::addFile(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::created(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::deleted(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::setDirty(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::stopScan()
-libKF6CoreAddons.so.6:KDirWatch::isStopped()
-libKF6CoreAddons.so.6:KDirWatch::removeDir(QString const&)
-libKF6CoreAddons.so.6:KDirWatch::startScan(bool, bool)
-libKF6CoreAddons.so.6:KDirWatch::KDirWatch(QObject*)
-libKF6CoreAddons.so.6:KDirWatch::KDirWatch(QObject*)
-libKF6CoreAddons.so.6:KDirWatch::~KDirWatch()
-libKF6CoreAddons.so.6:KDirWatch::~KDirWatch()
-libKF6CoreAddons.so.6:KDirWatch::~KDirWatch()
-libKF6CoreAddons.so.6:KAboutData::bugAddress() const
-libKF6CoreAddons.so.6:KAboutData::components() const
-libKF6CoreAddons.so.6:KAboutData::displayName() const
-libKF6CoreAddons.so.6:KAboutData::productName() const
-libKF6CoreAddons.so.6:KAboutData::programLogo() const
-libKF6CoreAddons.so.6:KAboutData::translators() const
-libKF6CoreAddons.so.6:KAboutData::componentName() const
-libKF6CoreAddons.so.6:KAboutData::desktopFileName() const
-libKF6CoreAddons.so.6:KAboutData::internalVersion() const
-libKF6CoreAddons.so.6:KAboutData::shortDescription() const
-libKF6CoreAddons.so.6:KAboutData::copyrightStatement() const
-libKF6CoreAddons.so.6:KAboutData::internalBugAddress() const
-libKF6CoreAddons.so.6:KAboutData::organizationDomain() const
-libKF6CoreAddons.so.6:KAboutData::internalProductName() const
-libKF6CoreAddons.so.6:KAboutData::internalProgramName() const
-libKF6CoreAddons.so.6:KAboutData::customAuthorRichText() const
-libKF6CoreAddons.so.6:KAboutData::customAuthorPlainText() const
-libKF6CoreAddons.so.6:KAboutData::customAuthorTextEnabled() const
-libKF6CoreAddons.so.6:KAboutData::authors() const
-libKF6CoreAddons.so.6:KAboutData::credits() const
-libKF6CoreAddons.so.6:KAboutData::version() const
-libKF6CoreAddons.so.6:KAboutData::homepage() const
-libKF6CoreAddons.so.6:KAboutData::licenses() const
-libKF6CoreAddons.so.6:KAboutData::otherText() const
-libKF6CoreAddons.so.6:KOSRelease::extraValue(QString const&) const
-libKF6CoreAddons.so.6:KOSRelease::prettyName() const
-libKF6CoreAddons.so.6:KOSRelease::supportUrl() const
-libKF6CoreAddons.so.6:KOSRelease::bugReportUrl() const
-libKF6CoreAddons.so.6:KOSRelease::versionCodename() const
-libKF6CoreAddons.so.6:KOSRelease::documentationUrl() const
-libKF6CoreAddons.so.6:KOSRelease::privacyPolicyUrl() const
-libKF6CoreAddons.so.6:KOSRelease::id() const
-libKF6CoreAddons.so.6:KOSRelease::logo() const
-libKF6CoreAddons.so.6:KOSRelease::name() const
-libKF6CoreAddons.so.6:KOSRelease::idLike() const
-libKF6CoreAddons.so.6:KOSRelease::buildId() const
-libKF6CoreAddons.so.6:KOSRelease::cpeName() const
-libKF6CoreAddons.so.6:KOSRelease::homeUrl() const
-libKF6CoreAddons.so.6:KOSRelease::variant() const
-libKF6CoreAddons.so.6:KOSRelease::version() const
-libKF6CoreAddons.so.6:KOSRelease::ansiColor() const
-libKF6CoreAddons.so.6:KOSRelease::extraKeys() const
-libKF6CoreAddons.so.6:KOSRelease::variantId() const
-libKF6CoreAddons.so.6:KOSRelease::versionId() const
-libKF6CoreAddons.so.6:KUserGroup::name() const
-libKF6CoreAddons.so.6:KUserGroup::users(unsigned int) const
-libKF6CoreAddons.so.6:KUserGroup::groupId() const
-libKF6CoreAddons.so.6:KUserGroup::isValid() const
-libKF6CoreAddons.so.6:KUserGroup::userNames(unsigned int) const
-libKF6CoreAddons.so.6:KUserGroup::operator==(KUserGroup const&) const
-libKF6CoreAddons.so.6:KMemoryInfo::freePhysical() const
-libKF6CoreAddons.so.6:KMemoryInfo::freeSwapFile() const
-libKF6CoreAddons.so.6:KMemoryInfo::totalPhysical() const
-libKF6CoreAddons.so.6:KMemoryInfo::totalSwapFile() const
-libKF6CoreAddons.so.6:KMemoryInfo::availablePhysical() const
-libKF6CoreAddons.so.6:KMemoryInfo::cached() const
-libKF6CoreAddons.so.6:KMemoryInfo::isNull() const
-libKF6CoreAddons.so.6:KMemoryInfo::buffers() const
-libKF6CoreAddons.so.6:KMemoryInfo::operator==(KMemoryInfo const&) const
-libKF6CoreAddons.so.6:KMemoryInfo::operator!=(KMemoryInfo const&) const
-libKF6CoreAddons.so.6:KAboutPerson::webAddress() const
-libKF6CoreAddons.so.6:KAboutPerson::emailAddress() const
-libKF6CoreAddons.so.6:KAboutPerson::name() const
-libKF6CoreAddons.so.6:KAboutPerson::task() const
-libKF6CoreAddons.so.6:KAboutPerson::avatarUrl() const
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::pid() const
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::name() const
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::user() const
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::command() const
-libKF6CoreAddons.so.6:KProcessList::KProcessInfo::isValid() const
-libKF6CoreAddons.so.6:KAboutLicense::key() const
-libKF6CoreAddons.so.6:KAboutLicense::name(KAboutLicense::NameFormat) const
-libKF6CoreAddons.so.6:KAboutLicense::spdx() const
-libKF6CoreAddons.so.6:KAboutLicense::text() const
-libKF6CoreAddons.so.6:KAutoSaveFile::metaObject() const
-libKF6CoreAddons.so.6:KAutoSaveFile::managedFile() const
-libKF6CoreAddons.so.6:KCompositeJob::hasSubjobs() const
-libKF6CoreAddons.so.6:KCompositeJob::metaObject() const
-libKF6CoreAddons.so.6:KCompositeJob::subjobs() const
-libKF6CoreAddons.so.6:KJobUiDelegate::metaObject() const
-libKF6CoreAddons.so.6:KJobUiDelegate::isAutoErrorHandlingEnabled() const
-libKF6CoreAddons.so.6:KJobUiDelegate::isAutoWarningHandlingEnabled() const
-libKF6CoreAddons.so.6:KJobUiDelegate::job() const
-libKF6CoreAddons.so.6:KNetworkMounts::metaObject() const
-libKF6CoreAddons.so.6:KNetworkMounts::isOptionEnabled(KNetworkMounts::KNetworkMountOption, bool) const
-libKF6CoreAddons.so.6:KNetworkMounts::paths(KNetworkMounts::KNetworkMountsType) const
-libKF6CoreAddons.so.6:KNetworkMounts::isEnabled() const
-libKF6CoreAddons.so.6:KPluginFactory::metaObject() const
-libKF6CoreAddons.so.6:KPluginFactory::metaData() const
-libKF6CoreAddons.so.6:KSignalHandler::metaObject() const
-libKF6CoreAddons.so.6:KAboutComponent::webAddress() const
-libKF6CoreAddons.so.6:KAboutComponent::description() const
-libKF6CoreAddons.so.6:KAboutComponent::name() const
-libKF6CoreAddons.so.6:KAboutComponent::license() const
-libKF6CoreAddons.so.6:KAboutComponent::version() const
-libKF6CoreAddons.so.6:KPluginMetaData::description() const
-libKF6CoreAddons.so.6:KPluginMetaData::formFactors() const
-libKF6CoreAddons.so.6:KPluginMetaData::licenseText() const
-libKF6CoreAddons.so.6:KPluginMetaData::translators() const
-libKF6CoreAddons.so.6:KPluginMetaData::bugReportUrl() const
-libKF6CoreAddons.so.6:KPluginMetaData::copyrightText() const
-libKF6CoreAddons.so.6:KPluginMetaData::isStaticPlugin() const
-libKF6CoreAddons.so.6:KPluginMetaData::supportsMimeType(QString const&) const
-libKF6CoreAddons.so.6:KPluginMetaData::otherContributors() const
-libKF6CoreAddons.so.6:KPluginMetaData::isEnabledByDefault() const
-libKF6CoreAddons.so.6:KPluginMetaData::name() const
-libKF6CoreAddons.so.6:KPluginMetaData::value(QString const&, QList<QString> const&) const
-libKF6CoreAddons.so.6:KPluginMetaData::value(QString const&, QString const&) const
-libKF6CoreAddons.so.6:KPluginMetaData::value(QString const&, bool) const
-libKF6CoreAddons.so.6:KPluginMetaData::value(QString const&, int) const
-libKF6CoreAddons.so.6:KPluginMetaData::authors() const
-libKF6CoreAddons.so.6:KPluginMetaData::isValid() const
-libKF6CoreAddons.so.6:KPluginMetaData::license() const
-libKF6CoreAddons.so.6:KPluginMetaData::rawData() const
-libKF6CoreAddons.so.6:KPluginMetaData::version() const
-libKF6CoreAddons.so.6:KPluginMetaData::website() const
-libKF6CoreAddons.so.6:KPluginMetaData::category() const
-libKF6CoreAddons.so.6:KPluginMetaData::fileName() const
-libKF6CoreAddons.so.6:KPluginMetaData::iconName() const
-libKF6CoreAddons.so.6:KPluginMetaData::isHidden() const
-libKF6CoreAddons.so.6:KPluginMetaData::pluginId() const
-libKF6CoreAddons.so.6:KPluginMetaData::mimeTypes() const
-libKF6CoreAddons.so.6:KPluginMetaData::operator==(KPluginMetaData const&) const
-libKF6CoreAddons.so.6:KSharedDataCache::evictionPolicy() const
-libKF6CoreAddons.so.6:KSharedDataCache::find(QString const&, QByteArray*) const
-libKF6CoreAddons.so.6:KSharedDataCache::contains(QString const&) const
-libKF6CoreAddons.so.6:KSharedDataCache::freeSize() const
-libKF6CoreAddons.so.6:KSharedDataCache::timestamp() const
-libKF6CoreAddons.so.6:KSharedDataCache::totalSize() const
-libKF6CoreAddons.so.6:KListOpenFilesJob::metaObject() const
-libKF6CoreAddons.so.6:KListOpenFilesJob::processInfoList() const
-libKF6CoreAddons.so.6:KMacroExpanderBase::escapeChar() const
-libKF6CoreAddons.so.6:KJobTrackerInterface::metaObject() const
-libKF6CoreAddons.so.6:KJob::isFinished() const
-libKF6CoreAddons.so.6:KJob::metaObject() const
-libKF6CoreAddons.so.6:KJob::uiDelegate() const
-libKF6CoreAddons.so.6:KJob::errorString() const
-libKF6CoreAddons.so.6:KJob::isSuspended() const
-libKF6CoreAddons.so.6:KJob::totalAmount(KJob::Unit) const
-libKF6CoreAddons.so.6:KJob::capabilities() const
-libKF6CoreAddons.so.6:KJob::isAutoDelete() const
-libKF6CoreAddons.so.6:KJob::processedAmount(KJob::Unit) const
-libKF6CoreAddons.so.6:KJob::isStartedWithExec() const
-libKF6CoreAddons.so.6:KJob::isFinishedNotificationHidden() const
-libKF6CoreAddons.so.6:KJob::error() const
-libKF6CoreAddons.so.6:KJob::percent() const
-libKF6CoreAddons.so.6:KJob::errorText() const
-libKF6CoreAddons.so.6:KUser::groupNames(unsigned int) const
-libKF6CoreAddons.so.6:KUser::isSuperUser() const
-libKF6CoreAddons.so.6:KUser::faceIconPath() const
-libKF6CoreAddons.so.6:KUser::shell() const
-libKF6CoreAddons.so.6:KUser::groups(unsigned int) const
-libKF6CoreAddons.so.6:KUser::userId() const
-libKF6CoreAddons.so.6:KUser::groupId() const
-libKF6CoreAddons.so.6:KUser::homeDir() const
-libKF6CoreAddons.so.6:KUser::isValid() const
-libKF6CoreAddons.so.6:KUser::property(KUser::UserProperty) const
-libKF6CoreAddons.so.6:KUser::loginName() const
-libKF6CoreAddons.so.6:KUser::operator==(KUser const&) const
-libKF6CoreAddons.so.6:KFormat::formatValue(double, KFormat::Unit, int, KFormat::UnitPrefix, KFormat::BinaryUnitDialect) const
-libKF6CoreAddons.so.6:KFormat::formatValue(double, QString const&, int, KFormat::UnitPrefix) const
-libKF6CoreAddons.so.6:KFormat::formatValue(double, QString const&, int, KFormat::UnitPrefix, KFormat::BinaryUnitDialect) const
-libKF6CoreAddons.so.6:KFormat::formatByteSize(double, int, KFormat::BinaryUnitDialect, KFormat::BinarySizeUnits) const
-libKF6CoreAddons.so.6:KFormat::formatDuration(unsigned long long, QFlags<KFormat::DurationFormatOption>) const
-libKF6CoreAddons.so.6:KFormat::formatRelativeDate(QDate const&, QLocale::FormatType) const
-libKF6CoreAddons.so.6:KFormat::formatDecimalDuration(unsigned long long, int) const
-libKF6CoreAddons.so.6:KFormat::formatRelativeDateTime(QDateTime const&, QLocale::FormatType) const
-libKF6CoreAddons.so.6:KFormat::formatSpelloutDuration(unsigned long long) const
-libKF6CoreAddons.so.6:KProcess::metaObject() const
-libKF6CoreAddons.so.6:KProcess::outputChannelMode() const
-libKF6CoreAddons.so.6:KProcess::program() const
-libKF6CoreAddons.so.6:KDirWatch::metaObject() const
-libKF6CoreAddons.so.6:KDirWatch::internalMethod() const
-libKF6CoreAddons.so.6:KDirWatch::ctime(QString const&) const
-libKF6CoreAddons.so.6:KDirWatch::contains(QString const&) const
-libKF6CoreAddons.so.6:operator<<(QDebug, KPluginMetaData const&)
-libKF6CoreAddons.so.6:operator<<(QDebug, KDirWatch const&)
+libKF6CoreAddons.so.6:KSandbox::isInside()
+libKF6CoreAddons.so.6:KSandbox::isSnap()
+libKF6CoreAddons.so.6:KSharedDataCache::clear()
+libKF6CoreAddons.so.6:KSharedDataCache::setEvictionPolicy(KSharedDataCache::EvictionPolicy)
+libKF6CoreAddons.so.6:KSharedDataCache::~KSharedDataCache()
+libKF6CoreAddons.so.6:KSignalHandler::self()
+libKF6CoreAddons.so.6:KSignalHandler::signalReceived(int)
+libKF6CoreAddons.so.6:KSignalHandler::watchSignal(int)
+libKF6CoreAddons.so.6:KSignalHandler::~KSignalHandler()
+libKF6CoreAddons.so.6:KUrlMimeData::exportUrlsToPortal(QMimeData*)
+libKF6CoreAddons.so.6:KUrlMimeData::isDocumentsPortalAvailable()
+libKF6CoreAddons.so.6:KUrlMimeData::mimeDataTypes()
+libKF6CoreAddons.so.6:KUrlMimeData::setSourceId(QMimeData*)
+libKF6CoreAddons.so.6:KUser::KUser(KUser::UIDMode)
+libKF6CoreAddons.so.6:KUser::KUser(KUserId)
+libKF6CoreAddons.so.6:KUser::~KUser()
+libKF6CoreAddons.so.6:KUserGroup::KUserGroup(KGroupId)
+libKF6CoreAddons.so.6:KUserGroup::KUserGroup(KUser::UIDMode)
+libKF6CoreAddons.so.6:KUserGroup::~KUserGroup()
+libKF6CoreAddons.so.6:KUserId::currentEffectiveUserId()
+libKF6CoreAddons.so.6:KUserId::currentUserId()
